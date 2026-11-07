@@ -1,20 +1,50 @@
-ul{
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+nav ul{
   display:flex;
   padding: 0;
   margin: 0;
-  gap:20px;
+  gap:25px;
   list-style: none;
-  margin-top: 23px;
+  align-items: center;
+
+ 
   
 }
-ul li a {
-   text-decoration: none;
-   font-family: 'Arial Narrow Bold';
-   font-size: 25px;
-   color: black;
-   border-radius: 4px 4px 4px 4px;
-   transition: color 0.3s ease;
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #666666;
+  transition: color 0.3 ease;
+  font-weight: 400;
+
 }
-ul li a :hover{
-    color: blue;
+nav ul li a:hover,
+nav ul li a.active{
+  color:#1e73be;
+}
+
+.panier-lien {
+  display: flex;
+  align-items: center;
+  gap:6px;
+  font-size: 16px;
+  color: blue;
+}
+.logo img{
+  height: 70px;
+  width: auto;
+  display: block;
+ 
 }
