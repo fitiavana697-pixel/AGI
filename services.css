@@ -1,0 +1,159 @@
+/* Configuration générale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteneur principal alignant les trois cartes */
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Style de base d'une carte */
+.card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Zone de l'image pour positionner les boutons par-dessus */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Assombrissement spécifique pour la troisième carte */
+.darkened::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Boutons icônes (Panier et Œil) en bas à droite */
+.overlay-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 2;
+}
+
+.btn-icon {
+    background-color: #1a365d; /* Bleu foncé */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+/* Bouton bleu ovale "VOIR PLUS" au centre de la troisième carte */
+.btn-more {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1d3557;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px; /* Forme ovale */
+    cursor: pointer;
+    z-index: 2;
+    letter-spacing: 0.5px;
+}
+
+/* Titre sous les images */
+.card-title {
+    padding: 20px 10px;
+    text-align: center;
+    color: #c49a6c; /* Couleur dorée / marron clair textuelle */
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #ffffff;
+}
+/* Configuration de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Bloc principal */
+.sidebar-block {
+    max-width: 500px;
+}
+
+/* Titre principal avec la bordure bleue à gauche */
+.block-title {
+    color: #1e3a60; /* Bleu foncé */
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 12px;
+    border-left: 3px solid #1e3a60; /* Barre verticale */
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Suppression des styles par défaut de la liste */
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espacement entre chaque ligne */
+.article-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Personnalisation de la flèche (puce) */
+.article-list li::before {
+    content: "➔";
+    color: #c49a6c; /* Couleur dorée / marron clair */
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+/* Style des liens textuels */
+.article-list a {
+    color: #8c8c8c; /* Gris clair */
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Changement de couleur léger lors du survol */
+.article-list a:hover {
+    color: #555555;
+}
