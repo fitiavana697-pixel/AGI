@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e7e9;
+}
+
+.logo img{
+  height: 150px;
+  width: auto;
+  display: block;
+ 
+}
+div img {
+  width: 100%;
+}
+
+
+.section{
+  background-color: #e6e7e9;
+  padding: 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.conteneur{
+  max-width: 1100px;
+  margin:  0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+}
+.colonne-texte {
+
+  flex: 1;
+  text-align: center;
+  color: #555555;
+
+}
+.colonne-image{
+  flex: 1;
+  text-align: center;
+}
+.colonne-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.colonne-texte h2{
+  font-size: 20px;
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.colonne-texte p{
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.colonne-texte a button {
+  background-color: #2e78e0;
+  color : #ffffff;
+  border: none;
+  padding: 10px 28px ;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 1opx;
+}
+.colonne-texte button:hover{
+  background-color: #1f2833;
+}
+
+
+
+
+
+
+.section2{
+  background-color: #053981;
+  padding:60px 20px ;
+}
+.conteneur2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.titre{
+  text-align: center;
+  color: #ffffff;
+}
+
+.pa{
+  color: #e6e7e9;
+  margin-right: 100px;
+}
+h3{
+  color: #e6e7e9;
+}
+h4{
+  color: #e6e7e9 ;
+}
+.gauche{
+  font-size: 15px;
+}
+.bou{
+  border-radius: 20px;
+  background-color: rgb(115, 124, 124);
+  border:none;
+  height: 30px;
+  width: 200px;
+  color: #e6e7e9;
+  margin-bottom: 10px;
+  
+}
+.droite {
+    flex: 1;
+    text-align: center;
+}
+
+.droite img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.conteneur3{
+  text-align: center ;
+}
+
+.conteneur3 p{
+
+  color:  #999999;
+  font-weight: 300
+
+}
+
+.conteneur3  h1{
+  color: #B6A58E;
+}
+strong {
+    font-weight: 600;
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/* STYLE COMMUN DE LA BARRE DE NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Logo */
+nav .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+/* Liste des liens */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Liens */
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+
+    transition: color 0.3s ease;
+}
+
+/* Survol */
+nav ul li a:hover {
+    color: #1e73be;
+}
+
+/* Panier */
+nav .panier-lien {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    color: blue;
+}
